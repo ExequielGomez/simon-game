@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simon Game | Fundamentos de JS | Platzi</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <main>
+    <div class="gameboard">
+      <div class="center-logo"></div>
+      <div class="buttons">
+        <div id="verde" class="color a" data-color="verde"></div>
+        <div id="rojo" class="color b" data-color="rojo"></div>
+        <div id="amarillo" class="color c" data-color="amarillo"></div>
+        <div id="azul" class="color d" data-color="azul"></div>
+        <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">Empezar a jugar!</button>
+      </div>
+    </div>
+  </main>
+    <div class="dashboard">
+      <img src="" alt="Logo-Platzi">
+      <a href="https://platzi.com/@exequiel_gomez/">@exequiel_gomez</a>
+      <div class="h-score">
+        <h2>High Score</h2>
+        <p class="number">88888888</p>
+      </div>
+      <div class="time">
+        <h2>Time</h2>
+        <p class="number">8:88</p>
+      </div>
+      <div class="score">
+        <h2>Score</h2>
+        <p class="number">88888888</p>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Press+Start+2P');
+ :root{
+   --black:rgba(70, 70, 70, 0.9);
+   --size: 50vh;
+ }
+*{
+  font-family: 'Press Start 2P', cursive;
+}
+body{
+  display: flex;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content:space-between;
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+.gameboard{
+  position: relative;
+  height: var(--size);
+  width: var(--size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+.center-logo{
+  position: absolute;
+  background: var(--black);
+  height: 40%;
+  width: 40%;
+  border: 2px solid;
+  z-index: 1;
+  border-radius: 100%;
+}
+.buttons{
+  height: inherit;
+  width: inherit;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--black);
+  box-shadow: 0 0 0 .5em var(--black);
+  border-radius: 100%;
+  grid-gap: .5em;
+}
+.color{
+  border: 6px solid transparent;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  transition: .05s;
+  will-change: transform;
+}
+.color:active{
+  transform: scale(.93);
+}
+.a{
+  border-radius: 100% 0 0 0;
+  background-color: green;
+}
+.b{
+  border-radius: 0 100% 0 0;
+  background-color: red;
+}
+.c{
+  border-radius: 0 0 0 100%;
+  background-color: yellow;
+}
+.d{
+  border-radius: 0 0 100% 0;
+  background-color: blue;
+}
+.light{
+  transform: scale(1.1);
+}
+.btn-start {
+  width: 400px;
+  height: 100px;
+  background: #ecf0f1;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 200px);
+  z-index: 2
+}
+.dashboard{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 30%;
+  height: inherit;
+  color: white;
+}
+.dashboard a{
+  color: white;
+}
+.number{
+  font-family: 'Orbitron', sans-serif;
+}
+.hide {
+  display: none;
+}
