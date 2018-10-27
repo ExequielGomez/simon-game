@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron|Press+Start+2P');
  :root{
-   --black:rgba(70, 70, 70, 0.9);
-   --size: 50vh;
+   --black:rgba( 26, 24, 22,1);
+   --size: 60vh;
+   --dash: rgba( 14, 17, 16,1);
+   --header:rgba( 44, 27, 17,1);
+   --button:rgba(142, 138, 139, 1);
  }
 body{
   font-family: 'Press Start 2P', cursive;
@@ -13,10 +16,13 @@ body{
   justify-content:space-between;
 }
 main{
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 70%;
+  height: 100%;
 }
 .gameboard{
   position: relative;
@@ -53,9 +59,6 @@ main{
   transition: .05s;
   will-change: transform;
 }
-.color:active{
-  transform: scale(.93);
-}
 .a{
   border-radius: 100% 0 0 0;
   background-color: green;
@@ -75,19 +78,23 @@ main{
 .light{
   transform: scale(1.1);
 }
+.btn:active{
+  transform: scale(.93);
+}
 .btn-start {
-  width: 400px;
-  height: 100px;
-  background: #ecf0f1;
-  color: #2c3e50;
-  font-size: 2.5rem;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 3px 3px var(--button);
+  box-shadow: inset 0 0 0 3px var(--button);
+  /* box-shadow: inset -3px -3px var(--button); */
+  width: 120%;
+  height: 5em;
+  color: var(--black);
+  font-size: 1.2rem;
   position: absolute;
-  top: calc(50% - 50px);
-  left: calc(50% - 200px);
   z-index: 2
 }
 .dashboard{
-  background-color: black;
+  background-color: var(--dash);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -98,7 +105,7 @@ main{
   color: white;
 }
 header{
-  height: 5em;
+  height: 6em;
   width: 100%;
   font-size: .9em;
   display: flex;
@@ -106,6 +113,7 @@ header{
   justify-content: space-between;
 }
 .logo{
+  background: var(--header);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -120,6 +128,8 @@ header{
   font-family: 'system-ui';
   font-size: 1em;
   text-decoration: none;
+}
+.profile{
 }
 .dashboard p{
   font-size: 2em;

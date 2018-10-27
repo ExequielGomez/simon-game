@@ -9,7 +9,7 @@ class Juego {
     this.inicializar = this.inicializar.bind(this)
     this.inicializar()
     this.generarSecuencia()
-    setTimeout(this.siguienteNivel, 500)
+    setTimeout(this.siguienteNivel, 1000)
   }
   inicializar() {
     this.siguienteNivel = this.siguienteNivel.bind(this)
