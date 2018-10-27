@@ -3,10 +3,8 @@
    --black:rgba(70, 70, 70, 0.9);
    --size: 50vh;
  }
-*{
-  font-family: 'Press Start 2P', cursive;
-}
 body{
+  font-family: 'Press Start 2P', cursive;
   display: flex;
   margin: 0;
   height: 100vh;
@@ -90,17 +88,51 @@ main{
 }
 .dashboard{
   background-color: black;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  text-align: center;
   width: 30%;
   height: inherit;
   color: white;
 }
+header{
+  height: 5em;
+  width: 100%;
+  font-size: .9em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo .course{
+  font-size: 1em;
+  display: inline;
+}
+.logo img{
+}
+.repo, .logo {
+  font-family: 'system-ui';
+  font-size: 1em;
+  text-decoration: none;
+}
+.dashboard p{
+  font-size: 2em;
+  margin: 0;
+}
 .dashboard a{
   color: white;
+}
+.dashboard .time{
+  font-size: 2em;
+}
+.dashboard .time h2{
+  margin: 0;
 }
 .number{
   font-family: 'Orbitron', sans-serif;
